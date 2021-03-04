@@ -1,0 +1,33 @@
+.hero {
+  height: 90vh;
+  background: var(--gradient);
+  padding: 10rem;
+  position: relative;
+  & h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--text-white);
+    line-height: 70px;
+    animation: 0.8s ease-in-out slideLeft;
+  }
+  & p {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    width: 30%;
+    line-height: 30px;
+    animation: 0.8s ease-in-out slideLeft;
+    & span {
+      font-weight: 900;
+    }
+  }
+  &__boy {
+    background-image: url("../../../../assets/images/boy.png");
+    height: 522px;
+    width: 706px;
+    position: absolute;
+    bottom: 0;
+    right: 58px;
+    background-size: cover;
+  }
+}

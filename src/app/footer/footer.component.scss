@@ -1,0 +1,68 @@
+.footer {
+  background: #212121;
+  min-height: 250px;
+  padding: 4rem 10rem 2rem;
+  color: var(--text-white);
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    font-family: "Noto Serif", serif;
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  &__about {
+    width: 300px;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+  }
+  &__logos {
+    margin-top: 3.5rem;
+    & i {
+      margin-right: 2rem;
+      font-size: 1.8rem;
+    }
+  }
+  &__quick {
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+  }
+  &__quickLink {
+    list-style-type: none;
+    padding-bottom: 1rem;
+    & a {
+      color: white;
+      text-decoration: none;
+      font-weight: 300;
+      font-size: 1.1rem;
+    }
+  }
+  &__mini {
+    background-color: black;
+    color: white;
+    padding: 1rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & h4 {
+      font-weight: 700;
+    }
+    & ul {
+      display: flex;
+    }
+    & ul li {
+      list-style-type: none;
+      padding-left: 2rem;
+      font-weight: 700;
+      & span {
+        color: var(--color-primary);
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.details {
+  background-color: #fff7e0;
+  &__features {
+    display: flex;
+    justify-content: space-between;
+    padding: 20rem 25rem 2rem 25rem;
+  }
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & i {
+      font-size: 7rem;
+      margin-bottom: 1.4rem;
+      position: relative;
+      z-index: 5;
+      color: rgb(73, 73, 73);
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: var(--color-primary);
+      }
+    }
+    & h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-gray);
+    }
+    & p {
+      color: var(--text-gray);
+      font-size: 1.3rem;
+      font-weight: 300;
+    }
+  }
+
+  &__port {
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    margin-top: 20rem;
+    padding-bottom: 10rem;
+  }
+  &__portImage {
+    background-image: url("https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-size: cover;
+    flex: 1;
+    clip-path: ellipse(94% 51% at 6% 51%);
+  }
+  &__portDetails {
+    padding-left: 10rem;
+    flex: 1;
+    & h2 {
+      font-size: 3rem;
+      font-weight: 500;
+      line-height: 60px;
+      color: var(--color-primary);
+    }
+    & h3 {
+      font-size: 3rem;
+      font-weight: 900;
+      color: var(--color-primary);
+    }
+    & p {
+      margin-top: 2.5rem;
+      color: var(--text-gray);
+      font-weight: 300;
+      font-size: 1.4rem;
+      line-height: 30px;
+      width: 80%;
+    }
+  }
+  &__cta {
+    margin-top: 2.5rem;
+    background: var(--gradient);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+    &:hover {
+      background: none;
+      background-color: var(--color-tertiary);
+      color: var(--color-secondary);
+      transform: translateY(-5px);
+      box-shadow: -1px 6px 16px 0px #07a1c377;
+      backface-visibility: hidden;
+    }
+  }
+}
